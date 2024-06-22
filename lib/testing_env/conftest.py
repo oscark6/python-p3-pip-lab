@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def pytest_itemcollected(item):
+def pytest_itemcollected(item): 
     par = item.parent.obj
     node = item.obj
     pref = par.__doc__.strip() if par.__doc__ else par.__class__.__name__
